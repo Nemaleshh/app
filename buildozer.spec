@@ -13,16 +13,16 @@ source.dir = .
 
 # (str) The entry point file of your app
 source.include_exts = py,png,jpg,kv,atlas
-main.py = app.py
+source.main = app.py
 
 # (str) Application version
 version = 1.0
 
 # (list) Application requirements (Ensure these match `requirements.txt`)
-requirements = python3, kivy
+requirements = python3,kivy
 
 # (bool) Whether to include a custom icon (if you have an icon)
-icon.filename = icon.png
+# icon.filename = icon.png
 
 # (bool) Whether the application should run in fullscreen
 fullscreen = 0
@@ -31,7 +31,7 @@ fullscreen = 0
 orientation = portrait
 
 # (str) Presplash image path (if you have one)
-presplash.filename = presplash.png
+# presplash.filename = presplash.png
 
 # (bool) Enable android permissions automatically
 android.permissions = INTERNET, ACCESS_NETWORK_STATE
@@ -60,13 +60,13 @@ android.ndk = 23b
 android.debug = True
 
 # (list) Additional Android permissions
-android.permissions = INTERNET, ACCESS_NETWORK_STATE, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+android.permissions = INTERNET, ACCESS_NETWORK_STATE
 
 # (bool) Enable AndroidX support
 android.enable_androidx = True
 
 # (bool) Allow running the app in the background
-android.service = True
+android.service = False
 
 # (list) Additional Java classes (if needed)
 android.add_src =
